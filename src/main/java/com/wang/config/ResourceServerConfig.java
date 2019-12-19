@@ -28,7 +28,7 @@ public class ResourceServerConfig {
     @Bean
     protected ResourceServerConfiguration BataResources() {
 
-        ResourceServerConfiguration resource =  new ResourceServerConfiguration() {
+        ResourceServerConfiguration resource = new ResourceServerConfiguration() {
             // Switch off the Spring Boot @Autowired configurers
             public void setConfigurers(List<ResourceServerConfigurer> configurers) {
                 super.setConfigurers(configurers);
